@@ -1,0 +1,140 @@
+/* Default Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Universal Style */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Mulish;
+}
+:root {
+    --default-black: #131318;
+    --default-orange: #FF5400;
+}
+
+/* Header Section Style */
+/* Navbar Style */
+.navbar-logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo-text {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.orange-text {
+    color: var(--default-orange);
+}
+.nav-routes li {
+    list-style-type: none;
+}
+.nav-routes a {
+    text-decoration: none;
+    color: var(--default-black);
+}
+.nav-routes {
+    display: flex;
+    gap: 60px;
+}
+#orange-route {
+    font-weight: 700;
+    color: var(--default-orange);
+}
+.navbar-container {
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+.hamburger-bar {
+    display: none;
+}
+
+
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 479px) {
+    /* Navbar Style */
+    .navbar-container {
+        width: 85%;
+    }
+    .navbar-logo {
+        gap: 10px;
+    }
+    .navbar-route {
+        display: none;
+    }
+    .hamburger-bar {
+        display: block;
+        font-size: 1.25rem;
+    }
+    .navbar-logo img {
+        width: 20%;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Small Screen */
+@media (min-width: 480px) and (max-width: 767px) {
+    /* Navbar Style */
+    .navbar-container {
+        width: 85%;
+    }
+    .navbar-logo {
+        gap: 5px;
+    }
+    .navbar-route {
+        display: none;
+    }
+    .hamburger-bar {
+        display: block;
+        font-size: 1.25rem;
+    }
+    .navbar-logo img {
+        width: 20%;
+    }
+    .nav-routes {
+        gap: 30px;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* Medium Screen */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-container {
+        width: 85%;
+    }
+    .logo-text {
+        font-size: 1.75rem;
+    }
+    .logo-icon {
+        width: 20%;
+    }
+    .nav-routes {
+        gap: 30px;
+    }
+}
+
+
+
+/* Large Screen */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .logo-text {
+        font-size: 2rem;
+    }
+    .logo-icon {
+        width: 18%;
+    }
+}
