@@ -10,6 +10,7 @@
 :root {
     --default-black: #131318;
     --default-orange: #FF5400;
+    --default-white: #FFFFFF;
 }
 
 /* Header Section Style */
@@ -48,12 +49,74 @@
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+    padding: 50px 0px;
 }
 .hamburger-bar {
     display: none;
 }
 
+/* Hero Section */
+.hero-section-container {
+    height: 600px;
+    width: 85%;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../assets/Images/hero-image.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+.hero-text-container {
+    text-align: center;
+}
+.hero-heading {
+    font-size: 4rem;
+    color: var(--default-white);
+    font-weight: 800;
+}
+.hero-description {
+    line-height: 1.5rem;
+    color: var(--default-white);
+    margin: 20px 0px;
+}
+.hero-inputs-container {
+    height: 100px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 85%;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero-inputs {
+    width: 20%;
+    height: 70%;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.hero-inputs:focus {
+    outline: 0;
+}
+.hero-text-input {
+    padding: 0px 0px 0px 20px;
+}
+.hero-inputs-container select {
+    padding: 0px 0px 0px 20px;
+}
+.submit-input {
+    background-color: var(--default-orange);
+    color: var(--default-white);
+}
+::placeholder {
+    color: var(--default-black);
+}
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 /* Extra Small Screen */
@@ -77,6 +140,37 @@
     }
     .logo-text {
         font-size: 1.5rem;
+    }
+    
+    /* Hero Section */
+    .hero-section-container {
+        height: 550px;
+    }
+    .hero-heading {
+        font-size: 1.5rem;
+    }
+    .hero-description {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .hero-inputs-container {
+        width: 90%;
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-inputs {
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        font-size: 1rem;
+    }
+    .hero-inputs-container select {
+        padding: 0px 0px 0px 0px;
+    }
+    .hero-inputs-container {
+        margin: 10px auto;
     }
 }
 
@@ -107,6 +201,37 @@
     .logo-text {
         font-size: 1.5rem;
     }
+
+    /* Hero Section */
+    .hero-section-container {
+        height: 550px;
+    }
+    .hero-heading {
+        font-size: 2rem;
+    }
+    .hero-description {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .hero-inputs-container {
+        width: 90%;
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-inputs {
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        font-size: 1rem;
+    }
+    .hero-inputs-container select {
+        padding: 0px 0px 0px 0px;
+    }
+    .hero-inputs-container {
+        margin: 20px auto;
+    }
 }
 
 
@@ -125,6 +250,30 @@
     .nav-routes {
         gap: 30px;
     }
+
+    /* Hero Section */
+    .hero-heading {
+        font-size: 3rem;
+    }
+    .hero-description {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .hero-inputs-container {
+        width: 90%;
+    }
+    .hero-inputs {
+        font-size: 1rem;
+        width: 22%;
+        padding: 0px;
+        text-align: center;
+    }
+    .hero-inputs-container select {
+        padding: 0px;
+    }
+    .hero-section-container {
+        height: 500px;
+    }
 }
 
 
@@ -136,5 +285,16 @@
     }
     .logo-icon {
         width: 18%;
+    }
+
+    /* Hero Section */
+    .hero-heading {
+        font-size: 3.5rem;
+    }
+    .hero-inputs-container {
+        width: 95%;
+    }
+    .hero-section-container {
+        height: 550px;
     }
 }
