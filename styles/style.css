@@ -11,6 +11,7 @@
     --default-black: #131318;
     --default-orange: #FF5400;
     --default-white: #FFFFFF;
+    --light-black: rgba(19, 19, 24, 0.70);
 }
 
 /* Header Section Style */
@@ -118,6 +119,37 @@
     justify-content: center;
 }
 
+/* Popular Tour Section */
+.popular-tour-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-tour-description-section {
+    color: var(--light-black);
+    line-height: 1.5rem;
+}
+.popular-tour-description-section p {
+    margin: 25px 0px;
+}
+.popular-tour-description-section li {
+    margin: 15px 0px;
+}
+.read-more {
+    background-color: var(--default-orange);
+    color: var(--default-white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: 0px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.popular-tours {
+    width: 85%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Extra Small Screen */
 @media (min-width: 320px) and (max-width: 479px) {
@@ -171,6 +203,23 @@
     }
     .hero-inputs-container {
         margin: 10px auto;
+    }
+
+    /* Popular Tour Section */
+    .popular-tours {
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-tour-image {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .popular-tour-heading {
+        font-size: 1.5rem;
+    }
+    .read-more {
+        padding: 10px 25px;
+        font-size: 1.25rem;
     }
 }
 
@@ -232,6 +281,19 @@
     .hero-inputs-container {
         margin: 20px auto;
     }
+
+    /* Popular Tour Section */
+    .popular-tours {
+        flex-direction: column;
+        align-items: center;
+    }
+    .popular-tour-image {
+        width: 80%;
+        margin: 50px 0px;
+    }
+    .popular-tour-heading {
+        font-size: 1.75rem;
+    }
 }
 
 
@@ -274,6 +336,18 @@
     .hero-section-container {
         height: 500px;
     }
+
+    /* Popular Tour Section */
+    .popular-tour-image {
+        width: 50%;
+    }
+    .popular-tour-heading {
+        font-size: 2rem;
+    }
+    .popular-tour-description-section {
+        font-size: 0.90rem;
+        width: 90%;
+    }
 }
 
 
@@ -296,5 +370,16 @@
     }
     .hero-section-container {
         height: 550px;
+    }
+
+    /* Popular Tour Section */
+    .popular-tour-heading {
+        font-size: 2.5rem;
+    }
+    .popular-tour-image {
+        width: 45%;
+    }
+    .popular-tour-description-section {
+        width: 85%;
     }
 }
