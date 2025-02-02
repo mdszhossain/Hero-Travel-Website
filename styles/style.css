@@ -270,6 +270,93 @@
     background: rgba(233, 68, 68, 0.05);
 }
 
+/* Deals & Discouts */
+.discounts {
+    width: 85%;
+    margin: 50px auto;
+    /* height: 800px;
+    background-color: red; */
+}
+.discounts-text-container {
+    text-align: center;
+}
+.deals-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--default-black);
+}
+.deals-description {
+    margin: 25px 0px;
+}
+.deals-card {
+    height: 500px;
+    background-image: url('../assets/Images/pool1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.booking-card-container {
+    width: 40%;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    border-radius: 15px;
+    margin: 0px 50px 0px 0px;
+}
+.icon-set, .booking-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.booking-top {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.duration-icon, .capacity-icon, .location-icon {
+    font-size: 1.25rem;
+    color: var(--default-orange);
+}
+.booking-heading {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--default-black);
+    margin-top: 25px;
+}
+.booking-price {
+    font-size: 1.25rem;
+    color: var(--default-orange);
+    font-weight: 800;
+}
+.book-now-btn {
+    font-size: 1.25rem;
+    border: 0px;
+    color: var(--default-white);
+    background-color: var(--default-orange);
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-top: 25px;
+}
+.booking-description {
+    margin: 15px 0px;
+}
+.booking-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.deals-card2 {
+    background-image: url('../assets/Images/pool2.png');
+    justify-content: left;
+    padding-left: 50px;
+}
+
+
+
+
 /* Extra Small Screen */
 @media (min-width: 320px) and (max-width: 479px) {
     /* Navbar Style */
@@ -390,7 +477,27 @@
     .choose-heading {
         font-size: 1.5rem;
     }
+
+    /* Discount Styles */
+    .booking-card-container {
+        width: 82%;
+        margin: 0px 0px 15px 0px;
+        padding: 20px;
+    }
+    .deals-card {
+        justify-content: center;
+        align-items: end;
+    }
+    .deals-card2 {
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .deals-heading {
+        font-size: 1.5rem;
+    }
+    
 }
+
 
 
 
@@ -513,7 +620,26 @@
     .choose-heading {
         font-size: 2rem;
     }
+
+    /* Discount Styles */
+    .booking-card-container {
+        width: 82%;
+        margin: 0px 0px 15px 0px;
+        padding: 20px;
+    }
+    .deals-card {
+        justify-content: center;
+        align-items: end;
+    }
+    .deals-card2 {
+        padding-left: 0px;
+        justify-content: center;
+    }
+    .deals-heading {
+        font-size: 2rem;
+    }
 }
+
 
 
 
@@ -597,7 +723,23 @@
     .choose-heading {
         font-size: 2rem;
     }
+
+    /* Discount Styles */
+    .booking-card-container {
+        width: 65%;
+        margin: 0px 40px 0px 0px;
+    }
+    .deals-heading {
+        font-size: 2rem;
+    }
+    .deals-card2 {
+        padding-left: 0px;
+    }
+    .booking-2 {
+        margin-left: 40px;
+    }
 }
+
 
 
 
@@ -651,5 +793,20 @@
     }
     .card-description {
         width: 95%;
+    }
+
+    /* Discount Styles */
+    .booking-card-container {
+        width: 55%;
+        margin: 0px 40px 0px 0px;
+    }
+    .deals-heading {
+        font-size: 2rem;
+    }
+    .deals-card2 {
+        padding-left: 0px;
+    }
+    .booking-2 {
+        margin-left: 40px;
     }
 }
