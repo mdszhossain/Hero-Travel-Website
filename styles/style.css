@@ -339,6 +339,7 @@
     border-radius: 10px;
     padding: 15px 25px;
     margin-top: 25px;
+    font-weight: 700;
 }
 .booking-description {
     margin: 15px 0px;
@@ -353,9 +354,40 @@
     justify-content: left;
     padding-left: 50px;
 }
+.package-btn {
+    display: flex;
+    justify-content: center;
+}
 
-
-
+/* Perfect-Place-Section */
+.perfect-place {
+    width: 85%;
+    margin: 110px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.perfect-place-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--default-black);
+}
+.list-description {
+    color: var(--default-black);
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+.see-more-btn {
+    margin-top: 15px;
+}
+.perfect-place-description {
+    margin: 25px 0px;
+}
+.perfect-place-image {
+    height: 40%;
+    width: 40%;
+}
 
 /* Extra Small Screen */
 @media (min-width: 320px) and (max-width: 479px) {
@@ -495,7 +527,19 @@
     .deals-heading {
         font-size: 1.5rem;
     }
-    
+
+    /* Perfect-Place-Section */
+    .perfect-place {
+        flex-direction: column;
+    }
+    .perfect-place-heading {
+        font-size: 1.5rem;
+    }
+    .perfect-place-image {
+        margin-top: 40px;
+        width: 100%;
+    }
+
 }
 
 
@@ -638,6 +682,18 @@
     .deals-heading {
         font-size: 2rem;
     }
+
+    /* Perfect-Place-Section */
+    .perfect-place {
+        flex-direction: column;
+    }
+    .perfect-place-heading {
+        font-size: 1.5rem;
+    }
+    .perfect-place-image {
+        margin-top: 40px;
+        width: 100%;
+    }
 }
 
 
@@ -738,6 +794,26 @@
     .booking-2 {
         margin-left: 40px;
     }
+
+    /* Perfect-Place-Image */
+    .perfect-place-text {
+        width: 60%;
+    }
+    .perfect-place {
+        flex-direction: row;
+    }
+    .perfect-place-image {
+        width: 45%;
+    }
+    .perfect-place-heading {
+        font-size: 2rem;
+    }
+    .list-description {
+        width: 85%;
+    }
+    .perfect-place-description {
+        width: 85%;
+    }
 }
 
 
@@ -808,5 +884,19 @@
     }
     .booking-2 {
         margin-left: 40px;
+    }
+
+    /* Perfect-Package-List */
+    .perfect-place-heading {
+        font-size: 2rem;
+    }
+    .perfect-place-text {
+        width: 50%;
+    }
+    .perfect-place-image {
+        width: 50%;
+    }
+    .perfect-place-description, .list-description {
+        width: 90%;
     }
 }
